@@ -1,0 +1,12 @@
+<h1>Pages#home</h1>
+<p>Find me in app/views/pages/home.html.erb</p>
+
+<% if current_user %>
+	<%= link_to "Start Chatting...", rooms_path %>
+	<!-- <#%= link_to "All messages", message_path, class: "text-blue-500" %> -->
+	<%= button_to "Logout", signout_path,  :method => :delete %>
+	<!-- <#%= turbo_frame_tag "notifications", src: notifications_path %> -->
+<% else %>
+	<%= link_to "Login", signin_path %>
+	<%= link_to "Sign Up", new_user_path %>
+<% end %>

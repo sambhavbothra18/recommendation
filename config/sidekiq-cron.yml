@@ -1,0 +1,2 @@
+UserActivityJob:
+  cron: '13 10 * * *' 

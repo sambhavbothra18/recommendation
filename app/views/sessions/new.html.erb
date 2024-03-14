@@ -1,0 +1,10 @@
+<%= form_for (:session) do |f| %>
+
+  <%= f.label :email, 'Enter your email' %>
+  <%= f.text_field :email, autocomplete: 'off' %><br>
+
+  <%= f.label :password, 'Enter your password' %>
+  <%= f.password_field :password, autocomplete: 'off' %><br>
+
+  <%= f.submit 'Sign in' %>
+<% end %>
